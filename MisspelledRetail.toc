@@ -2,7 +2,7 @@
 ## Title: MisspelledRetail
 ## Notes: Local chat spelling checks, useful corrections, and a personal dictionary.
 ## Author: Cosmoon
-## Version: 1.1.5
+## Version: 1.1.6
 ## IconTexture: Interface\AddOns\MisspelledRetail\Assets\MisspelledRetailLogo.tga
 ## SavedVariables: MisspelledRetailDB
 
@@ -15,6 +15,7 @@ Data\itIT.lua
 Data\nlNL.lua
 Data\Vocabulary.lua
 Data\WowVocabulary.lua
+Data\Hyphenated.lua
 Spelling\Languages.lua
 Spelling\Unicode.lua
 Spelling\Dictionary.lua
