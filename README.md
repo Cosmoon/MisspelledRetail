@@ -27,7 +27,7 @@ Item links and their formatting are preserved. The highlight colors are removed 
 - Enable up to two languages together for mixed-language chat, with accented letters supported.
 - Suggestions for missing letters, extra letters, swapped letters, and mistyped letters.
 - A wider search for longer words when the first and last letters match.
-- Built-in WoW vocabulary, including common spells, locations, classes, and chat shorthand.
+- Built-in Retail WoW vocabulary for locations, bosses, spells, items, professions, jargon, and classes, including complete multiword names.
 - Recognition of your character, party members, raid members, and target names for the current session.
 - A personal dictionary for names, guild terms, and your own shorthand.
 - Options for chat channels, highlight color, suggestion count, and suggestion-panel size.
@@ -46,6 +46,17 @@ The options have four pages:
 - **Personal words:** add or remove words, one per line, with up to 800 entries. Click **Save word list** to save your edits. You can also clear session ignores here.
 
 General and channel settings save immediately. **Reset options** restores the default settings and keeps your personal dictionary.
+
+With **WoW vocabulary** enabled, English game terms are recognized in every language.
+Localized terms follow your selected dictionaries; UK English shares the US game
+terms, and Dutch (NL/BE) shares the community vocabulary. Accents and capitalization
+are supported. The imported lists accept names and shorthand without adding them
+as correction suggestions. These curated lists are incomplete and are not a full
+export of the game database. Unlisted terms can still be added with **Learn word**.
+
+The Retail extension uses the user-supplied **WoW Multilingual Dictionaries**
+collection (six language sets, seven categories per set). Its localized names
+are a limited selection; Dutch is community vocabulary, not an official game locale.
 
 ## Minimap button
 

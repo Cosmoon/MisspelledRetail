@@ -82,9 +82,11 @@ end
 
 function Engine:Check(text, options, ignored)
 	local issues = {}
-	for _, token in ipairs(self:Tokens(text)) do
+	local tokens = self:Tokens(text)
+	local accepted = options.wowVocabulary and ns.MatchWowVocabulary and ns.MatchWowVocabulary(self, text, tokens) or {}
+	for i, token in ipairs(tokens) do
 		local word = normalize(token.word)
-		if U.Length(word) >= options.minLength and U.Length(word) <= 28 and U.IsWord(word)
+		if not accepted[i] and U.Length(word) >= options.minLength and U.Length(word) <= 28 and U.IsWord(word)
 			and not (ignored and ignored[word])
 			and not (options.ignoreUppercase and U.IsUpper(token.word))
 			and not self:Contains(word, options.wowVocabulary) then
@@ -184,6 +186,7 @@ function Engine:Suggest(word, options, yieldWork)
 		return matched >= required
 	end
 	local function add(candidate, forced, knownDistance)
+		if options.wowVocabulary and self.wowNoSuggest and self.wowNoSuggest[candidate] then return end
 		if prefix and not self:Elision(prefix, candidate, true) then return end
 		if seen[candidate] or candidate == word then return end
 		local ascii = not candidate:find("[\128-\255]")

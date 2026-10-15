@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.1.4 - 2026-10-15
+
+- Added the Retail WoW Multilingual Dictionaries for locations, bosses, spells,
+  items, professions, jargon, and classes across six language sets.
+- Recognize complete multiword names and accented capitalization, with shared
+  English game terms and localized terms following the selected languages.
+- Keep imported vocabulary acceptance-only and exclude imported jargon and
+  abbreviations from correction suggestions.
+
 ## 1.1.3 - 2026-10-13
 
 - Fixed messages failing to send with Enter in dungeon party chat and raid
